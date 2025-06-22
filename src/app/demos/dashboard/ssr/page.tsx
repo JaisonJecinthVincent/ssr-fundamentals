@@ -1,8 +1,4 @@
-export const metadata = {
-    title: "SSR Dashboard Demo",
-    description: "A dashboard page rendered using SSR.",
-  };
-  interface Stats{
+interface Stats{
     users:number,
     tasks:number
   }

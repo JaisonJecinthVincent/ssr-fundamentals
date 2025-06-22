@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 export const topics = [
   { label: 'What is SSR?', href: '/what-is-ssr' },
-  { label: 'History of SSR', href: '/history' },
+  { label: 'Case Studies / Demos', href: '/demos' },
   { label: 'CSR vs SSR vs SSG vs ISR', href: '/comparison' },
   { label: 'When to Use SSR', href: '/when-to-use' },
   { label: 'Popular Frameworks', href: '/frameworks' },
@@ -15,7 +15,7 @@ export const topics = [
   { label: 'Benefits & Trade-offs', href: '/benefits' },
   { label: 'SSR Challenges', href: '/challenges' },
   { label: 'SEO and SSR', href: '/seo' },
-  { label: 'Case Studies / Demos', href: '/demos' },
+  
 ];
 
 export default function VerticalTimeline() {

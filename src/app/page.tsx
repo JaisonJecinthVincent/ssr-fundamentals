@@ -4,12 +4,12 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react"
 import { useEffect, useRef, useState } from "react"
 import { animate, stagger } from "motion"
 import { splitText } from "motion-plus"
-
+import WhyCard from "./components/WhyCard"
 
 export default function HomePage() {
   const ref = useRef<HTMLDivElement>(null)
     const [{ width, height, top, left }, measure] = useElementDimensions(ref)
-
+    const [showCard, setShowCard] = useState(false);
     // Keep X centered, but let Y follow the mouse with a spring effect.
     const gradientX = useMotionValue(0.5)
     const gradientY = useSpring(useMotionValue(0.5), { stiffness: 200, damping: 50 })
@@ -53,6 +53,17 @@ export default function HomePage() {
         <div className="relative z-10 flex flex-col items-center py-12">
         <div ref={containerRef} className="container">
         <h1 className="text-center text-6xl font-bold pt-10 mb-8 text-white select-none"><span className="wavy">Learn Server-Side Rendering</span></h1>
+        <p className="text-white mt-4 text-lg">
+        This webpage was built using Next.js in accordance with SSR fundamentals.
+        <span
+          onClick={() => setShowCard(true)}
+          className="underline cursor-pointer text-blue-300 hover:text-blue-200 ml-1"
+        >
+          Why?
+        </span>
+      </p>
+
+      {showCard && <WhyCard onClose={() => setShowCard(false)} />}
         </div>
         <Stylesheet />
         <VerticalTimeline />
