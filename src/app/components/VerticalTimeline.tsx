@@ -6,7 +6,7 @@ import AOS from "aos";
 import { useEffect } from 'react';
 
 export const topics = [
-  { label: 'What is SSR?', href: '/what-is-ssr' },
+  { label: 'What is SSR?!!!!!!!!!!!!', href: '/what-is-ssr' },
   { label: 'Case Studies / Demos', href: '/demos' },
   { label: 'CSR vs SSR vs SSG vs ISR', href: '/comparison' },
   { label: 'When to Use SSR', href: '/when-to-use' },
