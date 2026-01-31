@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 export const topics = [
   { label: 'What is SSR?!!!!!!!!!!!!', href: '/what-is-ssr' },
-  { label: 'Case Studies / Demos', href: '/demos' },
+  { label: 'Case Studies ', href: '/demos' },
   { label: 'CSR vs SSR vs SSG vs ISR', href: '/comparison' },
   { label: 'When to Use SSR', href: '/when-to-use' },
   { label: 'Popular Frameworks', href: '/frameworks' },
