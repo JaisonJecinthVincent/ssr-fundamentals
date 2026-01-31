@@ -51,7 +51,7 @@ export default function PopularFrameworks() {
       </h1>
 
       <p className="text-lg text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-        Several modern frameworks make server-side rendering (SSR) simple and powerful. Here's a look at some of the top tools available across ecosystems.
+        Several modern frameworks make server-side rendering (SSR) simple and powerful. Here&apos;s a look at some of the top tools available across ecosystems.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

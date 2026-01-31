@@ -8,7 +8,7 @@ import WhyCard from "./components/WhyCard"
 
 export default function HomePage() {
   const ref = useRef<HTMLDivElement>(null)
-    const [{ width, height, top, left }, measure] = useElementDimensions(ref)
+    const [{ height, top, left }, measure] = useElementDimensions(ref)
     const [showCard, setShowCard] = useState(false);
     // Keep X centered, but let Y follow the mouse with a spring effect.
     const gradientX = useMotionValue(0.5)
@@ -112,7 +112,7 @@ function useElementDimensions(
     // Note: This won't accurately reflect viewport size changes
     useEffect(() => {
         measure()
-    }, [])
+    }, [measure])
 
     return [size, measure]
 }

@@ -49,7 +49,7 @@ export default function WhenToUseSSR() {
         <div data-aos="zoom-in" data-aos-delay="300" className="bg-white shadow-md p-6 rounded-xl border-t-4 border-rose-400">
           <h2 className="text-xl font-semibold mb-3 text-rose-600">🧩 Dynamic Routes</h2>
           <p className="text-lg text-gray-700">
-            If you're rendering dynamic pages (like `/product/[id]`) with content that changes often, SSR ensures fresh, relevant content on each visit.
+            If you&apos;re rendering dynamic pages (like `/product/[id]`) with content that changes often, SSR ensures fresh, relevant content on each visit.
           </p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function WhenToUseSSR() {
       <div className="mt-16" data-aos="fade-up" data-aos-delay="400">
         <h2 className="text-2xl font-bold mb-4 text-center text-rose-700">📌 Metaphor Time</h2>
         <p className="text-lg text-center max-w-2xl mx-auto">
-          <span className="font-bold">SSR is like a restaurant 🍽️</span> — it prepares your food (HTML) fresh per request. Great when you want it hot, personalized, and SEO-ready. But if everyone's ordering the same dish, maybe pre-cooked (SSG) is better!
+          <span className="font-bold">SSR is like a restaurant 🍽️</span> — it prepares your food (HTML) fresh per request. Great when you want it hot, personalized, and SEO-ready. But if everyone&apos;s ordering the same dish, maybe pre-cooked (SSG) is better!
         </p>
       </div>
     </main>

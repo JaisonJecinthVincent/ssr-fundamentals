@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState, cloneElement } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WebVitalsDisplay from './WebVitalsDisplay';
@@ -13,7 +13,7 @@ interface DemoSwitcherProps {
 export default function DemoSwitcher({ ssrDemo, csrDemo }: DemoSwitcherProps) {
   const [showDemos, setShowDemos] = useState(false);
   const [renderKey, setRenderKey] = useState(0);
-  const [csrMetrics, setCsrMetrics] = useState({ ttfb: 25, fcp: 0, lcp: 0, seo: 45 });
+  const [csrMetrics] = useState({ ttfb: 25, fcp: 600, lcp: 650, seo: 45 });
 
   const ssrMetrics = { ttfb: 610, fcp: 615, lcp: 620, seo: 98 };
 
@@ -29,8 +29,6 @@ export default function DemoSwitcher({ ssrDemo, csrDemo }: DemoSwitcherProps) {
   const handleCompareClick = () => {
     setShowDemos(true);
     setRenderKey(prevKey => prevKey + 1);
-    // Reset metrics for re-render
-    setCsrMetrics({ ttfb: 25, fcp: 0, lcp: 0, seo: 45 });
   };
 
   return (
@@ -56,7 +54,7 @@ export default function DemoSwitcher({ ssrDemo, csrDemo }: DemoSwitcherProps) {
               <WebVitalsDisplay metrics={ssrMetrics} />
             </div>
             <div className="border bg-white rounded-lg p-4">
-              {cloneElement(csrDemo, { onMetrics: (metrics: { fcp: number, lcp: number }) => setCsrMetrics(prev => ({ ...prev, ...metrics })) })}
+              {csrDemo}
               <WebVitalsDisplay metrics={csrMetrics} />
             </div>
           </div>

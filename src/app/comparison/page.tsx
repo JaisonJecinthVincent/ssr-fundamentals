@@ -17,7 +17,7 @@ export default function RenderingStrategies() {
 
       <p className="text-lg text-center mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         Modern frontend frameworks like Next.js offer multiple rendering methods. Each balances speed, SEO, and complexity differently.
-        Here's a side-by-side breakdown of the four main strategies:
+        Here&apos;s a side-by-side breakdown of the four main strategies:
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
