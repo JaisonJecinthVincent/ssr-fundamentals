@@ -54,6 +54,7 @@ export default function HomePage() {
         <div ref={containerRef} className="container">
         <h1 className="text-center text-6xl font-bold pt-10 mb-8 text-white select-none"><span className="wavy">Learn Server-Side Rendering</span></h1>
         <p className="text-white mt-4 text-lg">
+        Jaison Jecinth Vincent 2023103526<br></br>
         This webpage was built using Next.js in accordance with SSR fundamentals.
         <span
           onClick={() => setShowCard(true)}
